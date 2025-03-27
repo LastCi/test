@@ -1,0 +1,69 @@
+
+.house {
+    width: 300px;
+    height: 200px;
+    background-color: burlywood;
+    margin: 0;
+    display: block;
+    border: 2px solid black
+}
+
+.window {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(95, 48, 0);
+    position: relative;
+    border: 2px solid black;
+
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+.house-container {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 199, 237);
+}
+
+.glass1 {
+    border-radius: 50% 0  0 0 ;
+}
+.glass2 {
+    border-radius:  0 50% 0 0 ;
+}
+.glass3 {
+    border-radius:  0  0  0  50% ;
+}
+.glass4 {
+    border-radius:  0  0 50% 0 ;
+}
+
+.roof {
+    height: 200px; 
+    border: 150px solid transparent;
+    border-bottom: 150px solid  brown;
+    z-index: 0;
+
+}
+
+.pipe {
+    height: 60px;
+    width: 30px;
+    background-color: rgb(172, 104, 2);
+    position: absolute;
+    left: 670px;
+    top: 150px;
+    z-index: 1;
+}
